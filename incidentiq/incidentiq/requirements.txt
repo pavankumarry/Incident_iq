@@ -1,0 +1,51 @@
+# IncidentIQ - Python Dependencies
+# Pin exact versions for reproducibility
+
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+websockets==13.1
+pydantic==2.10.3
+
+# AWS / Bedrock
+boto3==1.35.76
+botocore==1.35.76
+
+# Vector Databases
+chromadb==0.5.23
+pinecone-client==5.0.1
+
+# LLM Orchestration
+langchain==0.3.9
+langchain-aws==0.2.7
+langgraph==0.2.56
+
+# Task Queue
+celery==5.4.0
+redis==5.2.1
+
+# Database
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.14.0
+
+# HTTP Client
+httpx==0.28.1
+aiohttp==3.11.10
+
+# Utilities
+python-dotenv==1.0.1
+pydantic-settings==2.6.1
+structlog==24.4.0
+tenacity==9.0.0
+
+# GitHub Integration
+PyGithub==2.5.0
+
+# Observability
+opentelemetry-api==1.29.0
+opentelemetry-sdk==1.29.0
+prometheus-client==0.21.1
+
+# Security
+cryptography==44.0.0
