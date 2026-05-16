@@ -1,0 +1,414 @@
+<mxfile host="app.diagrams.net" modified="2026-05-16" version="21.0.0">
+  <diagram name="IncidentIQ Full Flow" id="incidentiq-main">
+    <mxGraphModel dx="1800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- TITLE -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="title" value="IncidentIQ — AI-Powered Incident Response Platform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="1250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Amazon Bedrock Hackathon 2026 · Qwen3 32B · DeepSeek V3 · Qwen3 Coder · Kimi K2 · Titan Embeddings V2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#546e7a;" vertex="1" parent="1">
+          <mxGeometry x="200" y="58" width="1250" height="24" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- LANE BACKGROUNDS -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- Lane 1: Input Sources -->
+        <mxCell id="lane1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="200" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane1_label" value="INPUT SOURCES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#1565c0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="20" y="540" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Lane 2: API Gateway -->
+        <mxCell id="lane2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#6a1b9a;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="200" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane2_label" value="API GATEWAY" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#6a1b9a;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="240" y="540" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Lane 3: Agent Orchestration -->
+        <mxCell id="lane3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="280" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane3_label" value="AGENT ORCHESTRATION" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#2e7d32;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="460" y="540" width="280" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Lane 4: AI Models -->
+        <mxCell id="lane4_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="760" y="100" width="280" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane4_label" value="AMAZON BEDROCK MODELS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#e65100;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="760" y="540" width="280" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Lane 5: Memory & Storage -->
+        <mxCell id="lane5_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#880e4f;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="100" width="200" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane5_label" value="MEMORY &amp; STORAGE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#880e4f;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="540" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Lane 6: Outputs -->
+        <mxCell id="lane6_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2f1;strokeColor=#004d40;strokeWidth=2;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="100" width="200" height="980" as="geometry"/>
+        </mxCell>
+        <mxCell id="lane6_label" value="OUTPUTS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#004d40;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="540" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- INPUT SOURCES (Lane 1) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="src_github" value="🔀 GitHub PR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565c0;strokeColor=#0d47a1;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="src_shopapp" value="🛒 ShopApp\nOTEL Metrics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565c0;strokeColor=#0d47a1;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="src_slack" value="💬 Slack / PagerDuty\nAlerts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565c0;strokeColor=#0d47a1;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="src_logs" value="📋 Logs / Traces\nCloudWatch / OTEL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565c0;strokeColor=#0d47a1;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="src_manual" value="👨‍💻 Manual Trigger\nAPI / Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1565c0;strokeColor=#0d47a1;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="160" height="44" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- API GATEWAY (Lane 2) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="api_webhook" value="POST\n/api/github/webhook" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a1b9a;strokeColor=#4a148c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="130" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="api_telemetry" value="POST\n/api/telemetry/analyze" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a1b9a;strokeColor=#4a148c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="210" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="api_copilot" value="POST\n/api/copilot/update\nWS /ws/incident/{id}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a1b9a;strokeColor=#4a148c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="290" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="api_investigate" value="POST\n/api/incident/investigate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a1b9a;strokeColor=#4a148c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="370" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="api_pr" value="POST\n/api/pr/analyze" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6a1b9a;strokeColor=#4a148c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="450" width="160" height="44" as="geometry"/>
+        </mxCell>
+
+        <!-- Guardrail check box -->
+        <mxCell id="guardrail_box" value="🛡️ GUARDRAIL AGENT&#xa;• Secret leakage scan&#xa;• Prompt injection check&#xa;• Confidence gate ≥ 0.70&#xa;• Human approval check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b71c1c;strokeColor=#7f0000;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="530" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- AGENT ORCHESTRATION (Lane 3) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="orch_header" value="⚙️ LangGraph Orchestrator&#xa;13-Step Reasoning Workflow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2e7d32;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent_obs" value="👁️ OBSERVABILITY AGENT&#xa;• Detect anomalies&#xa;• Statistical thresholds&#xa;• Log pattern analysis&#xa;Model: Kimi K2 (P4)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#388e3c;strokeColor=#2e7d32;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="210" width="240" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent_rca" value="🧠 RCA AGENT&#xa;• Root cause analysis&#xa;• Deployment correlation&#xa;• Hypothesis generation&#xa;• Causal inference&#xa;Model: Qwen3 32B (P1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#388e3c;strokeColor=#2e7d32;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent_code" value="💻 CODE INTELLIGENCE AGENT&#xa;• Analyze diff / code&#xa;• Generate code fix&#xa;• Create Pull Request&#xa;• Run validation pipeline&#xa;Model: Qwen3 Coder (P3)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#388e3c;strokeColor=#2e7d32;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="440" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent_copilot" value="🤖 INCIDENT COPILOT AGENT&#xa;• Real-time guidance&#xa;• SOP gap detection&#xa;• Smart interjections&#xa;• Postmortem generation&#xa;Model: Kimi K2 (P4)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#388e3c;strokeColor=#2e7d32;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="agent_knowledge" value="📚 KNOWLEDGE RETRIEVAL&#xa;• RAG pipeline&#xa;• Semantic search&#xa;• Context ranking&#xa;• Historical matching&#xa;Model: Titan Embeddings (EMB)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#388e3c;strokeColor=#2e7d32;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="680" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- AMAZON BEDROCK MODELS (Lane 4) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="bedrock_header" value="☁️ Amazon Bedrock" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e65100;strokeColor=#bf360c;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="130" width="240" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="model_p1" value="🥇 P1 — Qwen3 32B&#xa;qwen.qwen3-32b-v1:0&#xa;&#xa;Primary reasoning&#xa;RCA · Orchestration&#xa;Deep analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e65100;strokeColor=#bf360c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="190" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="model_p2" value="🥈 P2 — DeepSeek V3&#xa;deepseek.v3-v1:0&#xa;&#xa;Deep analysis&#xa;Critical validation&#xa;Consensus check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f57c00;strokeColor=#e65100;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="300" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="model_p3" value="🥉 P3 — Qwen3 Coder&#xa;qwen.qwen3-coder-30b-a3b-v1:0&#xa;&#xa;Code review&#xa;PR generation&#xa;Bug detection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff8f00;strokeColor=#f57c00;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="410" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="model_p4" value="⚡ P4 — Kimi K2&#xa;moonshotai.kimi-k2.5&#xa;&#xa;Fast ChatOps&#xa;Alert classification&#xa;Streaming summaries" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffa000;strokeColor=#ff8f00;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="520" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="model_emb" value="🔢 EMB — Titan Embeddings V2&#xa;amazon.titan-embed-text-v2:0&#xa;&#xa;Vector embeddings&#xa;Semantic search&#xa;RAG retrieval" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffb300;strokeColor=#ffa000;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="630" width="240" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Confidence Gate -->
+        <mxCell id="conf_gate" value="🔒 CONFIDENCE GATE&#xa;Score ≥ 0.70 → proceed&#xa;Score &lt; 0.70 → suppress" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b71c1c;strokeColor=#7f0000;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="740" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- MEMORY & STORAGE (Lane 5) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="mem_chroma" value="🗄️ ChromaDB&#xa;Vector Store&#xa;&#xa;1,200+ incident&#xa;embeddings&#xa;Cosine similarity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#880e4f;strokeColor=#560027;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="130" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="mem_redis" value="⚡ Redis&#xa;State Memory&#xa;&#xa;Active incident&#xa;context cache&#xa;Session state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ad1457;strokeColor=#880e4f;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="250" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="mem_sqlite" value="🗃️ SQLite / PostgreSQL&#xa;&#xa;Products · Orders&#xa;Users · Sessions&#xa;ShopApp data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c2185b;strokeColor=#ad1457;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="370" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="mem_otel" value="📊 OTEL Metrics&#xa;telemetry_metrics.jsonl&#xa;&#xa;Latency · Errors&#xa;CPU · DB conns&#xa;Request traces" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d81b60;strokeColor=#c2185b;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="490" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="mem_runbooks" value="📖 Knowledge Base&#xa;&#xa;Runbooks · SOPs&#xa;Past incidents&#xa;Architecture docs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e91e63;strokeColor=#d81b60;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="610" width="160" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- OUTPUTS (Lane 6) -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="out_pr" value="📦 Pull Request&#xa;&#xa;Auto-generated fix&#xa;Branch + title&#xa;Risk analysis&#xa;Rollback strategy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#004d40;strokeColor=#00251a;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="130" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_review" value="🔍 PR Review Comment&#xa;&#xa;Risk level badge&#xa;Bug list + fixes&#xa;Security issues&#xa;OTEL correlation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00695c;strokeColor=#004d40;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="250" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_interjection" value="💡 Copilot Interjection&#xa;&#xa;Evidence-backed&#xa;Suggested command&#xa;Confidence score&#xa;Similar incident ref" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00796b;strokeColor=#00695c;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="370" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_rca" value="📋 RCA Report&#xa;&#xa;Root cause hypothesis&#xa;Confidence score&#xa;Timeline&#xa;Mitigations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00897b;strokeColor="#00796b;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="490" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_postmortem" value="📄 Postmortem&#xa;&#xa;Auto-generated doc&#xa;Timeline · Impact&#xa;Prevention steps&#xa;Action items" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26a69a;strokeColor=#00897b;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="610" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_alert" value="🚨 Alerts &amp; Notifications&#xa;&#xa;Slack messages&#xa;PagerDuty pages&#xa;Dashboard updates&#xa;Audit logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4db6ac;strokeColor=#26a69a;fontColor=#ffffff;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="730" width="160" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: Input → API -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#1565c0;strokeWidth=2;" edge="1" source="src_github" target="api_webhook" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#1565c0;strokeWidth=2;" edge="1" source="src_shopapp" target="api_telemetry" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#1565c0;strokeWidth=2;" edge="1" source="src_slack" target="api_copilot" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#1565c0;strokeWidth=2;" edge="1" source="src_logs" target="api_investigate" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#1565c0;strokeWidth=2;" edge="1" source="src_manual" target="api_pr" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: API → Guardrail → Agents -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6a1b9a;strokeWidth=2;" edge="1" source="api_webhook" target="guardrail_box" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6a1b9a;strokeWidth=2;" edge="1" source="api_telemetry" target="guardrail_box" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6a1b9a;strokeWidth=2;" edge="1" source="api_copilot" target="guardrail_box" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6a1b9a;strokeWidth=2;" edge="1" source="api_investigate" target="guardrail_box" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#6a1b9a;strokeWidth=2;" edge="1" source="api_pr" target="guardrail_box" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- Guardrail → Orchestrator -->
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b71c1c;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="guardrail_box" target="orch_header" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: Orchestrator → Agents -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#2e7d32;strokeWidth=2;" edge="1" source="orch_header" target="agent_obs" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#2e7d32;strokeWidth=2;" edge="1" source="orch_header" target="agent_rca" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#2e7d32;strokeWidth=2;" edge="1" source="orch_header" target="agent_code" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#2e7d32;strokeWidth=2;" edge="1" source="orch_header" target="agent_copilot" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#2e7d32;strokeWidth=2;" edge="1" source="orch_header" target="agent_knowledge" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: Agents → Models -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_obs" target="model_p4" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_rca" target="model_p1" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_rca" target="model_p2" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_code" target="model_p3" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_copilot" target="model_p4" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#e65100;strokeWidth=2;dashed=1;" edge="1" source="agent_knowledge" target="model_emb" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- Models → Confidence Gate -->
+        <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b71c1c;strokeWidth=2;" edge="1" source="model_p1" target="conf_gate" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b71c1c;strokeWidth=2;" edge="1" source="model_p2" target="conf_gate" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b71c1c;strokeWidth=2;" edge="1" source="model_p3" target="conf_gate" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#b71c1c;strokeWidth=2;" edge="1" source="model_p4" target="conf_gate" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: Agents ↔ Memory -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#880e4f;strokeWidth=2;dashed=1;" edge="1" source="agent_knowledge" target="mem_chroma" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#880e4f;strokeWidth=2;dashed=1;" edge="1" source="agent_copilot" target="mem_redis" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#880e4f;strokeWidth=2;dashed=1;" edge="1" source="agent_obs" target="mem_otel" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#880e4f;strokeWidth=2;dashed=1;" edge="1" source="agent_rca" target="mem_runbooks" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#880e4f;strokeWidth=2;dashed=1;" edge="1" source="model_emb" target="mem_chroma" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- CONNECTORS: Confidence Gate → Outputs -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="e32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_pr" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_review" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_interjection" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_rca" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_postmortem" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+        <mxCell id="e37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#004d40;strokeWidth=2;" edge="1" source="conf_gate" target="out_alert" parent="1">
+          <mxCell as="geometry"/>
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <!-- LEGEND BOX -->
+        <!-- ═══════════════════════════════════════════════════════ -->
+        <mxCell id="legend_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="840" width="420" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="848" width="200" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;fillColor=#1565c0;strokeColor=#0d47a1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="878" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1t" value="Input Sources (GitHub, OTEL, Slack, Logs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="876" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;fillColor=#6a1b9a;strokeColor=#4a148c;" vertex="1" parent="1">
+          <mxGeometry x="30" y="902" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2t" value="API Gateway (FastAPI :8000) + Guardrail Agent" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="900" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;fillColor=#2e7d32;strokeColor=#1b5e20;" vertex="1" parent="1">
+          <mxGeometry x="30" y="926" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3t" value="Agent Orchestration (Observability, RCA, Code, Copilot, Knowledge)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="924" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;fillColor=#e65100;strokeColor=#bf360c;" vertex="1" parent="1">
+          <mxGeometry x="30" y="950" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4t" value="Amazon Bedrock Models (P1→P4 priority + Embeddings)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="948" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5" value="" style="rounded=1;fillColor=#880e4f;strokeColor=#560027;" vertex="1" parent="1">
+          <mxGeometry x="30" y="974" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5t" value="Memory &amp; Storage (ChromaDB, Redis, SQLite, OTEL)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="972" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg6" value="" style="rounded=1;fillColor=#004d40;strokeColor=#00251a;" vertex="1" parent="1">
+          <mxGeometry x="30" y="998" width="24" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg6t" value="Outputs (PR, Review, Interjection, RCA, Postmortem, Alerts)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="996" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg7" value="" style="endArrow=block;endFill=1;strokeColor=#b71c1c;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry x="30" y="1028" width="40" height="16" as="geometry">
+            <Array as="points"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg7t" value="Critical path (Guardrail enforced)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="1020" width="360" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg8" value="" style="endArrow=block;endFill=1;strokeColor=#2e7d32;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="30" y="1048" width="40" height="16" as="geometry">
+            <Array as="points"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg8t" value="Model invocation (dashed = AI call)" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="62" y="1040" width="360" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
